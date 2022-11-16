@@ -460,10 +460,11 @@
             <label class="user-email-label">
               <input type="email" name="user-email" placeholder="E-mail" class="user-email-input" />
             </label>
-            <button type="submit" class="subscribe-button">Підписатися
+            <button type="submit" class="subscribe-button">
+              Підписатися
               <svg class="icon-send" width="24" height="24">
-                  <use href="./images/symbol-defs.svg#icon-send"></use>
-                </svg>
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
             </button>
           </form>
         </div>
@@ -478,6 +479,37 @@
               <use href="./images/symbol-defs.svg#icon-close-modal"></use>
             </svg>
           </button>
+          <h2 class="modal-window-heading">Залиште свої дані, ми вам передзвонимо</h2>
+          <form class="modal-window-form">
+            <label class="modal-window-label"
+              >Ім'я
+              <input type="text" name="user-name" class="modal-window-input" />
+            </label>
+            <label class="modal-window-label"
+              >Телефон
+              <input type="tel" name="user-telephone" class="modal-window-input" />
+            </label>
+            <label class="modal-window-label"
+              >Пошта
+              <input type="email" name="user-email" class="modal-window-input" />
+            </label>
+            <label class="modal-window-label"
+              >Коментар
+              <input
+                type="text"
+                name="user-comment"
+                class="modal-window-input"
+                placeholder="Введіть текст"
+              />
+            </label>
+          </form>
+          <label>
+            <input
+              type="checkbox"
+              name="agree-subscribe"
+              value="Погоджуюся з розсилкою та приймаю Умови договору"
+            />
+          </label>
         </div>
       </div>
     </div>
