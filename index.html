@@ -483,15 +483,30 @@
           <form class="modal-window-form">
             <label class="modal-window-label"
               >Ім'я
-              <input type="text" name="user-name" class="modal-window-input" />
+              <div class="label-container">
+                <svg class="label-icon" width="12" height="12">
+                  <use href="./images/symbol-defs.svg#icon-user-person"></use>
+                </svg>
+                <input type="text" name="user-name" class="modal-window-input" />
+              </div>
             </label>
             <label class="modal-window-label"
               >Телефон
-              <input type="tel" name="user-telephone" class="modal-window-input" />
+              <div class="label-container">
+                <svg class="label-icon" width="13" height="13">
+                  <use href="./images/symbol-defs.svg#icon-user-telephone"></use>
+                </svg>
+                <input type="tel" name="user-telephone" class="modal-window-input" />
+              </div>
             </label>
             <label class="modal-window-label"
               >Пошта
+              <div class="label-container">
+                <svg class="label-icon" width="15" height="12">
+                  <use href="./images/symbol-defs.svg#icon-user-mail"></use>
+                </svg>
               <input type="email" name="user-email" class="modal-window-input" />
+               </div>
             </label>
             <label class="modal-window-label"
               >Коментар
@@ -502,14 +517,14 @@
                 placeholder="Введіть текст"
               />
             </label>
+            <label>
+              <input
+                type="checkbox"
+                name="agree-subscribe"
+                value="Погоджуюся з розсилкою та приймаю Умови договору"
+              />
+            </label>
           </form>
-          <label>
-            <input
-              type="checkbox"
-              name="agree-subscribe"
-              value="Погоджуюся з розсилкою та приймаю Умови договору"
-            />
-          </label>
         </div>
       </div>
     </div>

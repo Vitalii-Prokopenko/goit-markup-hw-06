@@ -805,6 +805,16 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* .subscribe-button::after {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+
+  content: '';
+  background-image: url(../images/symbol-defs.svg#icon-send);
+  fill: currentColor;
+  } */
+
 .subscribe-button:hover,
 .subscribe-button:focus {
   color: var(--white-color);
@@ -918,9 +928,24 @@ header {
   color: #757575;
 }
 
-.modal-window-label:last-child {
+.modal-window-label:nth-child(4) {
   margin-bottom: 20px;
 }
+
+.label-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.label-icon {
+  position:absolute;
+  top: 18px;
+  left: 15px;
+}
+
+
+
 
 .modal-window-input {
   width: 100%;
@@ -931,10 +956,11 @@ header {
   border-radius: 4px;
 }
 
-.modal-window-label:last-child .modal-window-input {
+.modal-window-label:nth-child(4) .modal-window-input {
   height: 120px;
   padding-left: 16px;
 
   text-align: left;
   /* vertical-align: top; */
 }
+
