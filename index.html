@@ -465,8 +465,14 @@
         <div class="footer-block">
           <h2 class="subscribe-heading">Підпишіться на розсилку</h2>
           <form class="subscribe-form">
+            <input
+              type="email"
+              name="user-email"
+              id="user mail"
+              class="user-email-input"
+              placeholder=" "
+            />
             <label class="user-email-label" for="user-mail">E-mail</label>
-            <input type="email" name="user-email" id="user mail" class="user-email-input" />
             <button type="submit" class="subscribe-button">
               Підписатися
               <svg class="icon-send" width="24" height="24">
@@ -483,6 +489,7 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
         <div class="modal-container">
+          
           <!-- Button for closing modal window -->
 
           <button class="modal-close-button" data-modal-close>
@@ -498,53 +505,53 @@
 
           <form class="modal-window-form">
             <div class="form-field">
+              <input type="text" name="user-name" id="user-name" class="modal-window-input" />
               <svg class="label-icon" width="12" height="12">
                 <use href="./images/symbol-defs.svg#icon-user-person"></use>
               </svg>
               <label for="user-name" class="modal-window-label">Ім'я</label>
-              <input type="text" name="user-name" id="user-name" class="modal-window-input" />
             </div>
 
             <!-- Field for user telephone -->
 
             <div class="form-field">
-              <svg class="label-icon" width="13" height="13">
-                <use href="./images/symbol-defs.svg#icon-user-telephone"></use>
-              </svg>
-              <label for="user-telephone" class="modal-window-label">Телефон</label>
               <input
                 type="tel"
                 name="user-telephone"
                 id="user-telephone"
                 class="modal-window-input"
               />
+              <svg class="label-icon" width="13" height="13">
+                <use href="./images/symbol-defs.svg#icon-user-telephone"></use>
+              </svg>
+              <label for="user-telephone" class="modal-window-label">Телефон</label>
             </div>
 
             <!-- Field for user email -->
 
             <div class="form-field">
+              <input type="email" name="user-email" id="user-email" class="modal-window-input" />
               <svg class="label-icon" width="15" height="12">
                 <use href="./images/symbol-defs.svg#icon-user-mail"></use>
               </svg>
               <label for="user-email" class="modal-window-label">Пошта</label>
-              <input type="email" name="user-email" id="user-email" class="modal-window-input" />
             </div>
 
             <!-- field for user comment -->
 
-            <div class="form-field">
-              <label for="user-comment" class="modal-window-label">Коментар</label>
+            <div class="form-field form-field-comment">
               <textarea
                 name="user-comment"
                 class="user-comment"
                 id="user-comment"
                 placeholder="Введіть текст"
               ></textarea>
+              <label for="user-comment" class="modal-window-label">Коментар</label>
             </div>
 
             <!-- Checkbox for user agreement with contract -->
 
-            <div class="form-field">
+            <div class="form-field form-field-checkbox">
               <input type="checkbox" name="agree-subscribe" class="agree-check" id="agree-check" />
               <label for="agree-check" class="modal-window-check"
                 >Погоджуюся з розсилкою та приймаю Умови договору</label
@@ -553,7 +560,7 @@
 
             <!-- Button for submitting user data -->
 
-            <div class="form-field">
+            <div class="form-field form-field-button">
               <button type="submit" class="user-data-submit">Відправити</button>
             </div>
           </form>
