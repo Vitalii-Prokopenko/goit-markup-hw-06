@@ -481,49 +481,59 @@
           </button>
           <h2 class="modal-window-heading">Залиште свої дані, ми вам передзвонимо</h2>
           <form class="modal-window-form">
-            <label class="modal-window-label"
-              >Ім'я
-              <div class="label-container">
-                <svg class="label-icon" width="12" height="12">
-                  <use href="./images/symbol-defs.svg#icon-user-person"></use>
-                </svg>
-                <input type="text" name="user-name" class="modal-window-input" />
-              </div>
-            </label>
-            <label class="modal-window-label"
-              >Телефон
-              <div class="label-container">
-                <svg class="label-icon" width="13" height="13">
+            <div class="form-field">
+              <!-- <svg class="label-icon" width="12" height="12">
+                <use href="./images/symbol-defs.svg#icon-user-person"></use>
+              </svg> -->
+              <label for="user-name" class="modal-window-label">Ім'я</label>
+              <input type="text" name="user-name" id="user-name" class="modal-window-input" />
+            </div>
+
+            <div class="form-field">
+              <!-- <svg class="label-icon" width="13" height="13">
                   <use href="./images/symbol-defs.svg#icon-user-telephone"></use>
-                </svg>
-                <input type="tel" name="user-telephone" class="modal-window-input" />
-              </div>
-            </label>
-            <label class="modal-window-label"
-              >Пошта
-              <div class="label-container">
-                <svg class="label-icon" width="15" height="12">
-                  <use href="./images/symbol-defs.svg#icon-user-mail"></use>
-                </svg>
-              <input type="email" name="user-email" class="modal-window-input" />
-               </div>
-            </label>
-            <label class="modal-window-label"
-              >Коментар
+                </svg> -->
+              <label for="user-telephone" class="modal-window-label">Телефон</label>
               <input
-                type="text"
-                name="user-comment"
+                type="tel"
+                name="user-telephone"
+                id="user-telephone"
                 class="modal-window-input"
-                placeholder="Введіть текст"
               />
-            </label>
-            <label>
+            </div>
+
+            <div class="form-field">
+              <!-- <svg class="label-icon" width="15" height="12">
+                  <use href="./images/symbol-defs.svg#icon-user-mail"></use>
+                </svg> -->
+              <label for="user-email" class="modal-window-label">Пошта</label>
+              <input type="email" name="user-email" id="user-email" class="modal-window-input" />
+            </div>
+
+            <div class="form-field">
+              <label for="user-comment" class="modal-window-label">Коментар</label>
+              <textarea
+                name="user-comment"
+                class="user-comment"
+                id="user-comment"
+                placeholder="Введіть текст"
+              ></textarea>
+            </div>
+
+            <div class="form-field">
               <input
                 type="checkbox"
                 name="agree-subscribe"
-                value="Погоджуюся з розсилкою та приймаю Умови договору"
-              />
-            </label>
+                class="agree-check"
+                id="agree-check"
+                              />
+              <label for="agree-check" class="modal-window-check" >Погоджуюся з розсилкою та приймаю Умови договору</label>
+            </div>
+
+            <div class="form-field">
+<button type="submit" class="user-data-submit">Відправити</button>
+
+            </div>
           </form>
         </div>
       </div>
