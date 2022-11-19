@@ -273,9 +273,11 @@
         </div>
       </section>
     </main>
-    <!-- Address, contacts -->
+     <!-- === FOOTER ==== -->
     <footer class="footer">
       <div class="container">
+        <!-- 1st block in footer Address and contacts -->
+
         <div class="footer-block">
           <!-- Logo -->
           <a href="/" lang="en" class="logo"
@@ -298,8 +300,11 @@
             </ul>
           </address>
         </div>
-        <div class="footer-block studio-social-links-block">
-          <p class="social-links-heading-in-footer">приєднуйтесь</p>
+
+        <!-- 2nd block in footer Links -->
+
+        <div class="footer-block">
+          <h2 class="social-links-heading-in-footer">приєднуйтесь</h2>
           <ul class="studio-social-links">
             <li>
               <a href="#" class="social-link">
@@ -330,6 +335,22 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <!-- 3rd block in footer Subscribe for mailing -->
+
+        <div class="footer-block">
+          <h2 class="subscribe-heading">Підпишіться на розсилку</h2>
+          <form class="subscribe-form">
+            <label class="user-email-label" for="user-mail">E-mail</label>
+            <input type="email" name="user-email" id="user mail" class="user-email-input" />
+            <button type="submit" class="subscribe-button">
+              Підписатися
+              <svg class="icon-send" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>

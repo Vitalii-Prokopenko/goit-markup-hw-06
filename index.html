@@ -396,9 +396,11 @@
         </div>
       </section>
     </main>
-    <!-- Address, contacts -->
+    <!-- === FOOTER ==== -->
     <footer class="footer">
       <div class="container">
+        <!-- 1st block in footer Address and contacts -->
+
         <div class="footer-block">
           <!-- Logo -->
           <a href="/" lang="en" class="logo"
@@ -421,6 +423,9 @@
             </ul>
           </address>
         </div>
+
+        <!-- 2nd block in footer Links -->
+
         <div class="footer-block">
           <h2 class="social-links-heading-in-footer">приєднуйтесь</h2>
           <ul class="studio-social-links">
@@ -454,12 +459,14 @@
             </li>
           </ul>
         </div>
+
+        <!-- 3rd block in footer Subscribe for mailing -->
+
         <div class="footer-block">
           <h2 class="subscribe-heading">Підпишіться на розсилку</h2>
           <form class="subscribe-form">
-            <label class="user-email-label">
-              <input type="email" name="user-email" placeholder="E-mail" class="user-email-input" />
-            </label>
+            <label class="user-email-label" for="user-mail">E-mail</label>
+            <input type="email" name="user-email" id="user mail" class="user-email-input" />
             <button type="submit" class="subscribe-button">
               Підписатися
               <svg class="icon-send" width="24" height="24">
@@ -470,29 +477,40 @@
         </div>
       </div>
     </footer>
-    <!-- Modal window -->
+
+    <!-- === Modal window === -->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
         <div class="modal-container">
+          <!-- Button for closing modal window -->
+
           <button class="modal-close-button" data-modal-close>
             <svg width="11" height="11">
               <use href="./images/symbol-defs.svg#icon-close-modal"></use>
             </svg>
           </button>
           <h2 class="modal-window-heading">Залиште свої дані, ми вам передзвонимо</h2>
+
+          <!-- === Form for submitting user data === -->
+
+          <!-- Field for user name -->
+
           <form class="modal-window-form">
             <div class="form-field">
-              <!-- <svg class="label-icon" width="12" height="12">
+              <svg class="label-icon" width="12" height="12">
                 <use href="./images/symbol-defs.svg#icon-user-person"></use>
-              </svg> -->
+              </svg>
               <label for="user-name" class="modal-window-label">Ім'я</label>
               <input type="text" name="user-name" id="user-name" class="modal-window-input" />
             </div>
 
+            <!-- Field for user telephone -->
+
             <div class="form-field">
-              <!-- <svg class="label-icon" width="13" height="13">
-                  <use href="./images/symbol-defs.svg#icon-user-telephone"></use>
-                </svg> -->
+              <svg class="label-icon" width="13" height="13">
+                <use href="./images/symbol-defs.svg#icon-user-telephone"></use>
+              </svg>
               <label for="user-telephone" class="modal-window-label">Телефон</label>
               <input
                 type="tel"
@@ -502,13 +520,17 @@
               />
             </div>
 
+            <!-- Field for user email -->
+
             <div class="form-field">
-              <!-- <svg class="label-icon" width="15" height="12">
-                  <use href="./images/symbol-defs.svg#icon-user-mail"></use>
-                </svg> -->
+              <svg class="label-icon" width="15" height="12">
+                <use href="./images/symbol-defs.svg#icon-user-mail"></use>
+              </svg>
               <label for="user-email" class="modal-window-label">Пошта</label>
               <input type="email" name="user-email" id="user-email" class="modal-window-input" />
             </div>
+
+            <!-- field for user comment -->
 
             <div class="form-field">
               <label for="user-comment" class="modal-window-label">Коментар</label>
@@ -520,19 +542,19 @@
               ></textarea>
             </div>
 
+            <!-- Checkbox for user agreement with contract -->
+
             <div class="form-field">
-              <input
-                type="checkbox"
-                name="agree-subscribe"
-                class="agree-check"
-                id="agree-check"
-                              />
-              <label for="agree-check" class="modal-window-check" >Погоджуюся з розсилкою та приймаю Умови договору</label>
+              <input type="checkbox" name="agree-subscribe" class="agree-check" id="agree-check" />
+              <label for="agree-check" class="modal-window-check"
+                >Погоджуюся з розсилкою та приймаю Умови договору</label
+              >
             </div>
 
-            <div class="form-field">
-<button type="submit" class="user-data-submit">Відправити</button>
+            <!-- Button for submitting user data -->
 
+            <div class="form-field">
+              <button type="submit" class="user-data-submit">Відправити</button>
             </div>
           </form>
         </div>
