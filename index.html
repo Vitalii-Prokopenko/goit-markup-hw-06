@@ -489,7 +489,6 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
         <div class="modal-container">
-          
           <!-- Button for closing modal window -->
 
           <button class="modal-close-button" data-modal-close>
@@ -552,10 +551,16 @@
             <!-- Checkbox for user agreement with contract -->
 
             <div class="form-field form-field-checkbox">
-              <input type="checkbox" name="agree-subscribe" class="agree-check" id="agree-check" />
-              <label for="agree-check" class="modal-window-check"
-                >Погоджуюся з розсилкою та приймаю Умови договору</label
-              >
+              <label for="agree-check" class="modal-window-check">
+                <input
+                  type="checkbox"
+                  name="agree-subscribe"
+                  class="agree-check visually-hidden"
+                  id="agree-check"
+                />
+                <span class="icon-checkbox"></span>
+                <span class="label-text">Погоджуюся з розсилкою та приймаю Умови договору</span>
+              </label>
             </div>
 
             <!-- Button for submitting user data -->
