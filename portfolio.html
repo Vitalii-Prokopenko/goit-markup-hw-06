@@ -18,15 +18,19 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Logo, menu, email, telephone -->
+    <!-- === Logo, menu, email, telephone === -->
+
     <header>
       <div class="container nav-header">
         <nav class="logo-and-menu-in-header">
           <!-- Logo -->
+
           <a class="logo" href="/" lang="en"
             >Web<span class="colored-part-of-logo-in-header">Studio</span></a
           >
+
           <!-- Menu -->
+
           <ul class="main-menu">
             <li>
               <a href="./index.html">Студія</a>
@@ -39,7 +43,9 @@
             </li>
           </ul>
         </nav>
+
         <!-- email, telephone -->
+
         <ul class="contacts-in-header">
           <li>
             <a class="contact-link" href="mailto:info@devstudio.com">
@@ -60,12 +66,15 @@
         </ul>
       </div>
     </header>
-    <!-- The main part of page Portfolio -->
+
+    <!-- === The main part of page Portfolio === -->
     <main>
       <section class="section-portfolio">
         <div class="container">
           <h1 class="visually-hidden">Портфоліо</h1>
+
           <!-- Filter -->
+
           <ul class="filter-buttons">
             <li><button type="button" class="filter-button">Усі</button></li>
             <li><button type="button" class="filter-button">Веб-сайти</button></li>
@@ -73,7 +82,9 @@
             <li><button type="button" class="filter-button">Дизайн</button></li>
             <li><button type="button" class="filter-button">Маркетинг</button></li>
           </ul>
+
           <!-- Portfolio projects -->
+
           <ul class="portfolio-cards">
             <li class="portfolio-card">
               <a class="portfolio-card-link" href="">
@@ -273,7 +284,9 @@
         </div>
       </section>
     </main>
-     <!-- === FOOTER ==== -->
+
+    <!-- === FOOTER ==== -->
+
     <footer class="footer">
       <div class="container">
         <!-- 1st block in footer Address and contacts -->
@@ -342,8 +355,14 @@
         <div class="footer-block">
           <h2 class="subscribe-heading">Підпишіться на розсилку</h2>
           <form class="subscribe-form">
+            <input
+              type="email"
+              name="user-email"
+              id="user-mail"
+              class="user-email-input"
+              placeholder=" "
+            />
             <label class="user-email-label" for="user-mail">E-mail</label>
-            <input type="email" name="user-email" id="user mail" class="user-email-input" />
             <button type="submit" class="subscribe-button">
               Підписатися
               <svg class="icon-send" width="24" height="24">
