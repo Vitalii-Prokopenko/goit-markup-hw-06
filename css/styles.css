@@ -20,7 +20,7 @@
   --activity-icon-background-color: rgba(47, 48, 58, 0.8);
   --footer-social-link-background-color: rgba(255, 255, 255, 0.1);
   --backdrop-background-color: rgba(0, 0, 0, 0.2);
-  --button-modal-background-color: #188CE8;
+  --button-modal-background-color: #188ce8;
 }
 
 /* Global styles reset */
@@ -279,7 +279,11 @@ header {
   height: 600px;
   max-width: 1600px;
 
-  background-image: linear-gradient(to right, var(--hero-gradient-color), var(--hero-gradient-color)),
+  background-image: linear-gradient(
+      to right,
+      var(--hero-gradient-color),
+      var(--hero-gradient-color)
+    ),
     url(../images/hero/hero-img.jpg);
   background-size: cover;
   background-position: center;
@@ -869,10 +873,8 @@ header {
   transform: translate(-50%, -50%);
 
   width: 528px;
-  height: 581px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 40px;
+  min-height: 581px;
+  padding: 40px;
 
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -907,7 +909,7 @@ header {
 }
 
 .modal-close-button:hover > svg {
-  fill: var(--accent-color)
+  fill: var(--accent-color);
 }
 
 .modal-window-heading {
@@ -925,7 +927,7 @@ header {
 .modal-window-form {
   margin-right: 0;
   margin-left: 0;
-  
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -968,10 +970,6 @@ header {
 }
 
 .form-field-label {
-  position: absolute;
-  top: 0;
-  left: 0;
-
   margin-bottom: 4px;
 
   font-size: 12px;
@@ -1040,11 +1038,11 @@ header {
 }
 
 .icon-checkbox {
- margin-right: 8px;
+  margin-right: 8px;
 
   width: 16px;
   height: 14px;
-  
+
   border: 2px solid var(--second-color);
   border-radius: 4px;
   background-image: none;
@@ -1085,13 +1083,12 @@ header {
   background-color: var(--button-modal-background-color);
 }
 
-
 .form-field-icon {
   position: absolute;
   top: 32px;
   left: 15px;
 
-    fill: inherit;
+  fill: inherit;
 
   transition-property: fill;
   transition-duration: 250ms;
